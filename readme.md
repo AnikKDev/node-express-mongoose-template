@@ -6,39 +6,39 @@ This repository contains the source code for Your Application Name.
 
 The folder structure of the application is as follows:
 
-├── src
-│ ├── app
-│ │ ├── config
-│ │ │ └── index.ts
-│ │ ├── middlewares
-│ │ │ └── (custom middlewares files)
-│ │ └── routes
-│ │ └── index.ts
-│ ├── errors
-│ │ └── (error-related classes and functions)
-│ ├── helpers
-│ │ └── (helper functions files)
-│ ├── modules
-│ │ ├── (module 1 folder)
-│ │ │ ├── model
-│ │ │ ├── const
-│ │ │ ├── controller
-│ │ │ ├── service
-│ │ │ ├── router
-│ │ │ └── interface
-│ │ ├── (module 2 folder)
-│ │ │ ├── model
-│ │ │ ├── const
-│ │ │ ├── controller
-│ │ │ ├── service
-│ │ │ ├── router
-│ │ │ └── interface
-│ │ └── ...
-│ └── shared
-│ └── (shared utility functions)
-├── server.ts
-├── .env
-└── README.md
+- src
+  - app
+    - config
+      - index.ts
+    - middlewares
+      - (custom middleware files)
+    - routes
+      - index.ts
+  - errors
+    - (error-related classes and functions)
+  - helpers
+    - (helper function files)
+  - modules
+    - (module 1 folder)
+      - model
+      - const
+      - controller
+      - service
+      - router
+      - interface
+    - (module 2 folder)
+      - model
+      - const
+      - controller
+      - service
+      - router
+      - interface
+    - ...
+  - shared
+    - (shared utility functions)
+- server.ts
+- .env
+- README.md
 
 ## Getting Started
 
