@@ -5,7 +5,7 @@ import app from "./app";
 import { Server } from "http";
 // handling uncaught exceptions
 process.on("uncaughtException", (error) => {
-  console.log(colors.red.bold(error.message));
+  console.log(colors.red.bold(`Uncaught exception ${error.message}`));
   process.exit(1);
 });
 
@@ -28,7 +28,11 @@ process.on("unhandledRejection", (error) => {
   console.log(colors.red.bold("got into unhandledRejection"));
   if (server) {
     server.close((error) => {
-      console.log(colors.yellow.bold("closing server"));
+      console.log(
+        colors.yellow.bold(
+          `closing server 🥹 :=> ${error?.name} == ${error?.message}`,
+        ),
+      );
       process.exit(1);
     });
   } else {
