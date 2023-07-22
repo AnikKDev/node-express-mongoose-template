@@ -20,17 +20,9 @@ This is a backend project template designed to help you quickly set up a web app
 
 Welcome to the [your-project-name] backend project template! This template provides a solid foundation for building modern web applications or APIs. It includes configurations for Prettier and ESLint to ensure consistent code formatting and style. The entry point of the application is `server.ts`, and the root `index.ts` sets up the server.
 
-## Features
-
-- [List some key features of your project]
-
-## Requirements
-
-- [List the software and dependencies required to run your project]
-
 ## Installation
 
-1. [Step-by-step installation guide]
+- Run `yarn` or `npm` (`yarn` recommended) after cloning the project to install the dependencies
 
 ## Configuration
 
