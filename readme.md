@@ -6,7 +6,6 @@ This is a backend project template designed to help you quickly set up a web app
 
 - [Introduction](#introduction)
 - [Features](#features)
-- [Requirements](#requirements)
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Project Structure](#project-structure)
