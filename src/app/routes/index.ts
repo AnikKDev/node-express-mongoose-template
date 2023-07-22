@@ -1,7 +1,9 @@
 import { Router } from "express";
 const router = Router();
 // remove the below line
+// import testPathRouter from "./testPath.router.ts"
 const testPathRouter = "/";
+
 const moduleRoutes = [
   // add the module routes objects here
   // {path:"/pathname", router: moduleroute}

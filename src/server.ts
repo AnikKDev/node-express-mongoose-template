@@ -13,7 +13,7 @@ let server: Server;
 
 async function main() {
   try {
-    await mongoose.connect(config.database_url as string);
+    await mongoose.connect(config.databasUrl as string);
     console.log(colors.green.bold("Connected to database"));
     server = app.listen(config.port, () => {
       console.log(colors.cyan.bold(`Connectd to port ${config.port}`));
@@ -25,7 +25,7 @@ async function main() {
 
 // listening event
 process.on("unhandledRejection", (error) => {
-  console.log(colors.red.bold("got into unhandledRejection"));
+  console.log(colors.red.bold(`got into unhandledRejection ${error}`));
   if (server) {
     server.close((error) => {
       console.log(

@@ -1,7 +1,8 @@
 import { CastError } from "mongoose";
 import { IGenericErrorMessage } from "../shared/interfaces/genericError.interface";
+import { IGenericErrorResponse } from "../shared/interfaces/genericErrorResponse.interface";
 
-export const handleCastError = (err: CastError) => {
+export const handleCastError = (err: CastError): IGenericErrorResponse => {
   const errors: IGenericErrorMessage[] = [
     {
       path: err.path,

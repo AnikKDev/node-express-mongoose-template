@@ -13,6 +13,18 @@
   ],
 
   "rules": {
+    "no-multiple-empty-lines": [
+      2,
+      {
+        "max": 1
+      }
+    ],
+    "camelcase": [
+      "error",
+      {
+        "properties": "always"
+      }
+    ],
     "@typescript-eslint/no-unused-vars": "warn",
     // "no-console": "error",
     // "no-undef": "error",
