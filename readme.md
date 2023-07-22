@@ -1,89 +1,107 @@
-# Node-Express-Mongo Backend Template
+# Backend Project Template
 
-This repository contains the source code for Your Application Name.
+This is a backend project template designed to help you quickly set up a web application or API using [your preferred programming language/stack here]. It follows best practices and includes various useful components for building robust and maintainable projects.
 
-## Folder Structure
+## Table of Contents
 
-The folder structure of the application is as follows:
+- [Introduction](#introduction)
+- [Features](#features)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Project Structure](#project-structure)
+- [Usage](#usage)
+- [API Documentation](#api-documentation)
+- [Testing](#testing)
+- [Contributing](#contributing)
+- [License](#license)
 
-- src
-  - app
-    - config
-      - index.ts
-    - middlewares
-      - (custom middleware files)
-    - routes
-      - index.ts
-  - errors
-    - (error-related classes and functions)
-  - helpers
-    - (helper function files)
-  - modules
-    - (module 1 folder)
-      - model
-      - const
-      - controller
-      - service
-      - router
-      - interface
-    - (module 2 folder)
-      - model
-      - const
-      - controller
-      - service
-      - router
-      - interface
-    - ...
-  - shared
-    - (shared utility functions)
-- server.ts
-- .env
-- README.md
+## Introduction
 
-## Getting Started
+Welcome to the [your-project-name] backend project template! This template provides a solid foundation for building modern web applications or APIs. It includes configurations for Prettier and ESLint to ensure consistent code formatting and style. The entry point of the application is `server.ts`, and the root `index.ts` sets up the server.
 
-To get started with the application, follow these steps:
+## Features
 
-1. Clone the repository: `git clone https://github.com/your/repo.git`
-2. Install the dependencies: `yarn`
-3. Update the `.env` file with the required configurations.
-4. Start the server: `yarn start`
+- [List some key features of your project]
 
-## Additional Information
+## Requirements
 
-### Configuration
+- [List the software and dependencies required to run your project]
 
-The application's configuration can be found in the `src/app/config/index.ts` file.
+## Installation
 
-### Middlewares
+1. [Step-by-step installation guide]
 
-Custom middlewares for the application are located in the `src/app/middlewares` folder.
+## Configuration
 
-### Routes
+The configuration files for Prettier and ESLint are included by default, but you can customize their rules in `.prettierrc` and `.eslintrc`, respectively. Additionally, the application's environment configuration can be found in `app/config/index.ts`.
 
-The application's routes are defined in the `src/app/routes/index.ts` file.
+## Project Structure
 
-### Errors
+```plaintext
+├── app
+│   ├── config
+│   │   ├── index.ts
+│   │   └── [other configuration files]
+│   ├── middlewares
+│   │   └── globalErrorHandler.ts
+│   ├── routes
+│   │   └── index.ts
+│   └── [other app-related modules]
+├── errors
+│   ├── ApiError.ts
+│   ├── handleValidationError.ts
+│   ├── handleZodError.ts
+│   └── handleCastError.ts
+├── helpers
+│   ├── [pagination-related files]
+│   └── [other helper files]
+├── modules
+│   ├── [module-name]
+│   │   ├── [moduleName].controller.ts
+│   │   ├── [moduleName].service.ts
+│   │   ├── [moduleName].interface.ts
+│   │   ├── [moduleName].model.ts
+│   │   ├── [moduleName].constants.ts
+│   │   └── [moduleName].validation.ts
+│   └── [other modules]
+└── shared
+    ├── interface
+    │   ├── IGenericErrorResponse.interface.ts
+    │   └── IGenericResponse.ts
+    └── functions
+        ├── catchAsync.ts
+        └── sendResponse.ts
+```
 
-Error handling classes and functions can be found in the `src/errors` folder.
+## Usage
 
-### Helpers
+```
+# Clone the repository
 
-Helper functions, such as pagination helpers, are located in the `src/helpers` folder.
+git clone https://github.com/AnikKDev/node-express-mongoose-template.git
 
-### Modules
+# Change into the project directory
 
-The application is organized into modules, with each module having its own folder containing the following files:
+cd backend-project-template
 
-- `model`: Model definitions for the module.
-- `const`: Constant values related to the module.
-- `controller`: Controllers handling the module's logic.
-- `service`: Services implementing the module's business logic.
-- `router`: Routers defining the module's routes.
-- `interface`: Interfaces used within the module.
+# Check the current remote URL
 
-### Shared
+git remote -v
 
-The `src/shared` folder contains utility functions that are shared across the application.
+# Set a new remote URL to your repository
 
-## Feel Free to connect and contribute
+git remote set-url origin https://github.com/your-username/your-repo.git
+
+# Verify the new remote URL
+
+git remote -v
+```
+
+## License
+
+[MIT License](LICENSE) © [Anik]
+
+## LinkedIn
+
+[LinkedIn](https://www.linkedin.com/in/anikkdev/)
